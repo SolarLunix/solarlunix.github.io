@@ -6755,3 +6755,7 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/* Melissa's additions */
+.sidebar {
+  border: 1px solid black;
+}

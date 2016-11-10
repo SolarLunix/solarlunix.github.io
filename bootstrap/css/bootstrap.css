@@ -1583,6 +1583,7 @@ pre code {
   overflow-y: scroll;
 }
 .container {
+  max-width: 99%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;

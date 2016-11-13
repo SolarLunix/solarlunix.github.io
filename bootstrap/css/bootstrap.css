@@ -6763,3 +6763,9 @@ button.close {
   border: 1px solid black;
   padding: 5px 10px;
 }
+
+.outline {
+  border: 1px solid black;
+  margin: 5px;
+  border: 5px;
+}

@@ -6768,4 +6768,6 @@ button.close {
   border: 1px solid black;
   margin: 5px;
   padding: 5px 10px;
+  overflow-y: scroll;
+  max-height: 100%;
 }

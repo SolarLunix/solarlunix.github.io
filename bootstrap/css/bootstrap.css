@@ -1580,7 +1580,7 @@ pre code {
 }
 .pre-scrollable {
   height: auto;
-  max-height: 125vh;
+  max-height: 100vh;
   overflow-y: scroll;
 }
 .container {

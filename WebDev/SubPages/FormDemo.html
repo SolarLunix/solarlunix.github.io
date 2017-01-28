@@ -1,82 +1,45 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>WebDev Bootcamp</title>
-	<link rel="stylesheet" href="https://solarlunix.github.io/bootstrap/css/bootstrap.css"></link>
-	<link rel="stylesheet" href="https://solarlunix.github.io/bootstrap/css/bootstrap=theme.css"></link>
-	<script src="https://solarlunix.github.io/bootstrap/js/bootstrap.js"></script>
-	<script src="https://use.fontawesome.com/593037603a.js"></script>
+	<title>Form Demo</title>
 </head>
 <body>
-	<!--Nav Bar Start-->
-	<ul class="nav nav-tabs navbar-fixed-top">
-		<li role="presentation"><a href="https://solarlunix.github.io"><i class="fa fa-heartbeat" aria-hidden="true"></i> Melissa Melaugh</a></li>
-		<li role="presentation" id="indexLink"><a href="https://solarlunix.github.io">Home</a></li>
-		<li role="presentation" id="cvLink"><a href="https://solarlunix.github.io/CV.html">Melissa's CV</a></li>
-		<li role="presentation" id="projectsLink" class="active"><a href="https://solarlunix.github.io/projects.html">Projects</a></li>
-	</ul>
-	
-	<div id="buffer"><br><br><br><br></div>
-	<!--Nav Bar End-->
+<h1>Login</h1>
 
-	<!--WebDev information starts here-->
-	<div class="container">	
-		<div class="row">
-			<div class="col-sm-12 container">
-				<h1>Melissa's WebDev</h1>
+<!-- If there is no action set it will just refresh the page -->
 
-				<!--Content Start-->
-				<div class="container">
-					<div class="outline pre-scrollable">
-						<h1>Login</h1>
+<!-- it is really form action="website/server" method="get/post" -->
+<form>
 
-						<!-- If there is no action set it will just refresh the page -->
+	<p>
+		<lable for="Email">Email:</lable>
+		<input id ="Email" name="Email" type="email" placeholder="Email">
+		<lable for="username">Username:</lable>
+		<input id ="username" name="username" type="text" placeholder="username">
+		<lable for="password">Password:</lable>
+		<input id ="password" name= "password" type="password" placeholder="password">
 
-						<!-- it is really form action="website/server" method="get/post" -->
-						<form>
+		<input type="submit">
+	</p>
 
-							<p>
-								<lable for="Email">Email:</lable>
-								<input id ="Email" name="Email" type="email" placeholder="Email">
-								<lable for="username">Username:</lable>
-								<input id ="username" name="username" type="text" placeholder="username">
-								<lable for="password">Password:</lable>
-								<input id ="password" name= "password" type="password" placeholder="password">
+	<p>Do you prefer cats or dogs?</p>
 
-								<input type="submit">
-							</p>
+	<p>
+		<input name="petChoice" id="cat" type="radio" value="cat"><lable for="cat">Cats</lable>
+		<input name="petChoice" id="dog" type="radio" value="dog"><lable for="dog">Dogs</lable>
+	</p>
 
-							<p>Do you prefer cats or dogs?</p>
+	<p>What is your favourite colour?</p>
+	<p>
+		<select name="color">
+			<option value="red">>:(</option>
+			<option value="blue">:'(</option>
+			<option value="yellow">:D</option>
+		</select>
+	</p>
 
-							<p>
-								<input name="petChoice" id="cat" type="radio" value="cat"><lable for="cat">Cats</lable>
-								<input name="petChoice" id="dog" type="radio" value="dog"><lable for="dog">Dogs</lable>
-							</p>
+	<button>GO!</button>
+</form>
 
-							<p>What is your favourite colour?</p>
-							<p>
-								<select name="color">
-									<option value="red">>:(</option>
-									<option value="blue">:'(</option>
-									<option value="yellow">:D</option>
-								</select>
-							</p>
-
-							<button>GO!</button>
-						</form>
-					</div>
-				</div>
-				<!--Content End-->
-
-				<!--End of Page Start-->
-				<nav aria-label="...">
-				  <ul class="pager">
-				    <li class="previous"><a href="FirstPage.html"><span aria-hidden="true">&larr;</span> Older</a></li>
-				    <li><a href="https://solarlunix.github.io/WebDev/WebDevHome.html">WebDev Home</a></li>
-				    <li class="next"><a href="FormRegistration.html">Newer <span aria-hidden="true">&rarr;</span></a></li>
-				  </ul>
-				</nav>
-				<!--End of Page End-->
-			</div>
-		</div>
-	</div>
 </body>
+</html>

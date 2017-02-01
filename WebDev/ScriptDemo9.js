@@ -17,6 +17,11 @@ var movies = [{
 }];
 
 movies.forEach(function(movie){
+	aString = buildString(movie);
+	console.log(aString);
+});
+
+function buildString(movie){
 	var aString = "You have ";
 	
 	if(movie.seen === true){
@@ -26,6 +31,5 @@ movies.forEach(function(movie){
 	}
 
 	aString += movie.name + "\" - " + movie.rating + " stars";
-
-	console.log(aString);
-});
+	return aString;
+}

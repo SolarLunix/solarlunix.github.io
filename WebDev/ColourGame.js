@@ -4,13 +4,21 @@ var colourDisplay = document.getElementById("colourDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var reset = document.querySelector("#reset");
+var hard = document.querySelector("#hard");
+var easy = document.querySelector("#easy");
 
 //Create other variables that are needed
 var numColours = 6;
 var colourArray = createColoursArray(numColours);
 var colourGoal = pickColour();
 
+
 //SETUP
+updateSquares();
+colourDisplay.textContent = colourGoal;
+
+
+//EVENT LISTENERS
 //Give all the squares their colours
 for(var i = 0; i < colourSquares.length; i++){
 	//add click event to squares
@@ -20,9 +28,10 @@ for(var i = 0; i < colourSquares.length; i++){
 
 		//Check if the colour is the same as the win colour
 		if(thisColour === colourGoal){
-			changeColours(colourGoal);
+			uniteColours(colourGoal);
 			messageDisplay.textContent = "Correct!";
 			h1.style.background = colourGoal;
+			reset.textContent = "Play Again?"
 		}else{
 			this.style.background = "#232323";
 			messageDisplay.textContent = "Try Again";
@@ -30,24 +39,56 @@ for(var i = 0; i < colourSquares.length; i++){
 	});
 }
 
-updateSquares();
-colourDisplay.textContent = colourGoal;
+easy.addEventListener("click", function(){
+	easy.classList.add("selected");
+	hard.classList.remove("selected");
+	numColours = 3;
+	updateDisplay();
+});//end easy button click
+
+hard.addEventListener("click", function(){
+	hard.classList.add("selected");
+	easy.classList.remove("selected");
+	numColours = 6;
+	updateDisplay();
+});//end hard button click
 
 //Resets everything if the reset button is clicked
 reset.addEventListener("click", function(){
+	updateDisplay();
+});//end reset button click
+
+
+//FUNCTIONS
+//refreshes the colourArray, colourGoal, and colourDisplay
+function updateDisplay(){
 	colourArray = createColoursArray(numColours);
 	colourGoal = pickColour();
 	colourDisplay.textContent = colourGoal;
+	h1.style.background = "steelblue";
 	updateSquares();
-});//end reset button click
+	reset.textContent = "New Colours"
+	messageDisplay.textContent = "";
+}//end updateDisplay
 
-//FUNCTIONS
 //updates all of the colours according to the colour array
 function updateSquares(){
 	for(var i = 0; i < colourSquares.length; i++){
-		colourSquares[i].style.background = colourArray[i];
+		if(colourArray[i]){
+			colourSquares[i].style.display = "block";
+			colourSquares[i].style.background = colourArray[i];
+		}else{
+			colourSquares[i].style.display = "none";
+		}
 	}
 }//end updateSquares
+
+//updates all the squares to be the same colour
+function uniteColours(colour){
+	for(var i = 0; i < colourSquares.length; i++){
+		colourSquares[i].style.background = colour;
+	}
+}//end uniteColours
 
 //creates an array of colours of length num
 function createColoursArray(num){

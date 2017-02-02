@@ -2,6 +2,8 @@ body{
 	background-color: #232323;	
 	color: white;
 	text-align: center;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
 }
 
 .container { 
@@ -21,4 +23,21 @@ body{
 	background-color: white;
 	color: black;
 	height: 30px;
+}
+
+.selected {
+	background-color: steelblue;
+}
+
+h1{
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px 0;
+}
+
+#colourDisplay { 
+	font-size: 200%;
 }

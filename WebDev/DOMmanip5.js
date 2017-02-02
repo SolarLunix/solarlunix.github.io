@@ -12,3 +12,5 @@ console.log(ul.textContent);
 
 console.log(p.innerHTML);
 console.log(ul.innerHTML);
+
+p.innerHTML = "This <strong>does</strong> overwrite your previous paragraph, but you <strong>can</strong> have HTML tags!"

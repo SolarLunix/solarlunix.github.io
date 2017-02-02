@@ -1,3 +1,7 @@
 body{
-	background-color: cyan;
+	text-align: center;
+}
+
+.winner {
+	color: green;
 }

@@ -1,15 +1,12 @@
-var count = 0;
+var checks = document.getElementsByTagName("p");
+var checks_hold = [];
 
-var img = document.getElementsByTagName("img")[0];
+for(var i = 0; i < checks.length; i++){
+	checks[i].classList.add("done");
+	checks[i].classList.toggle("done");
 
-var imgs = ["https://solarlunix.github.io/Images/RyanMelissa1.jpg",
-			"https://solarlunix.github.io/Images/RockoMelissa1.jpg"]
-
-setInterval(function(){
-	if(count === (imgs.length - 1)){
-		count = -1;
-	}
-	count++;
-
-	img.setAttribute("src", imgs[count]);
-}, 2500);
+	checks[i].addEventListener("click", function(){
+		this.classList.toggle("done");
+		console.log(checks[i]);
+	});
+}

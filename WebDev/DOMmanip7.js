@@ -1,4 +1,4 @@
-var checks = document.getElementsByTagName("p");
+var checks = document.getElementsByTagName("li");
 var checks_hold = [];
 
 for(var i = 0; i < checks.length; i++){

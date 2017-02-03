@@ -13,3 +13,19 @@
 	text-align: center;
 	width: 300px;
 }
+
+body {
+	width: 100%;
+}
+
+.game {
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 9px 9px 0px 0px;
+}

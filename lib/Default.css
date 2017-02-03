@@ -20,11 +20,19 @@ body {
 
 .game {
 	width: 100%;
+	height: 200px;
 	border: 1px solid black;
 	border-radius: 10px;
 	text-align: center;
 	background: black;
 	color: white;
+}
+
+.gameTxt {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
 img {

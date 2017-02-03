@@ -1,0 +1,4 @@
+.panel-info .panel-body {
+	height: 200px;
+	overflow: scroll;
+}

@@ -39,3 +39,7 @@ img {
 	max-width: 100%;
 	border-radius: 9px 9px 0px 0px;
 }
+
+.nav { 
+	background: rgb(245, 224, 252);
+}

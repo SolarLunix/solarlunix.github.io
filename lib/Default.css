@@ -1,14 +1,14 @@
 .sidebar {
-  border: 1px solid black;
-  padding: 5px 10px;
+	border: 1px solid black;
+	padding: 5px 10px;
 }
 
 .outline {
-  border: 1px solid black;
-  margin: 5px;
-  padding: 5px 10px;
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px 10px;
 }
 
-body{
+#temp{
 	background-color: red;
 }

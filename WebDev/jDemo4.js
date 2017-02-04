@@ -8,12 +8,16 @@ $("button").click(function(){
 	console.log("button click");
 });
 
-$(".special").click(function(){
-	$("body").css("backgroundColor", createColour());
-	$(this).css("color", createColour());
-	$("div").css("color", createColour());
+$("#pop").click(function(){
+	var divtext = $("div").html() + "<br><br>POP POP!";
+	$("div").html(divtext);
+	console.log(divtext);
+	makeSpecial();
 });
 
+makeSpecial();
+
+//Functions
 function createColour(){
 	//create the values
 	var r = Math.floor(Math.random() * 255);
@@ -26,3 +30,11 @@ function createColour(){
 	//return the colour
 	return colourVal;
 }//end createColour
+
+function makeSpecial(){
+	$(".special").click(function(){
+		$("body").css("backgroundColor", createColour());
+		$(this).css("color", createColour());
+		$("div").css("color", createColour());
+	});
+}//end makeSpecial

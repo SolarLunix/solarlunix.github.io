@@ -18,3 +18,11 @@ $("input").on("keypress", function(event){
 		$("#text").text(text); 
 	}
 })
+
+$("button").on("mouseenter", function(){
+	$(this).css("fontWeight", "bold");
+})
+
+$("button").on("mouseleave", function(){
+	$(this).css("fontWeight", "normal");
+})

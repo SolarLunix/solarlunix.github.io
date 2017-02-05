@@ -37,9 +37,14 @@ body {
 
 .gameimg {
 	max-width: 100%;
+	max-height: 90%;
 	border-radius: 9px 9px 0px 0px;
 }
 
 .nav { 
 	background: rgb(245, 224, 252);
+}
+
+.container {
+	margin-top: 20px;
 }

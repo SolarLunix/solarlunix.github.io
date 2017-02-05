@@ -1,0 +1,29 @@
+body{
+	background: black;
+}
+
+#container {
+	width: 350px;
+	margin: 0 auto;
+	border: 1px dashed white;
+	background: steelblue;
+}
+
+.delete{
+	background-color: red;
+	color: black;
+}
+
+.check{
+	background-color: green;
+	color: black;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.invis {
+	display: none;
+}

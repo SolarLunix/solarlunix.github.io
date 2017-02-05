@@ -1,13 +1,13 @@
 
 //------- Listeners -------
 //Check off li's
-$("ul").on("click", "li", function(){
+$("#list").on("click", "li", function(){
 	$(this).toggleClass("completed");
 	$(this).children(".check").fadeToggle(250);
 });//end Chekc off li's
 
 //Delete ToDos
-$("ul").on("click", ".delete", function(event){
+$("#list").on("click", ".delete", function(event){
 	$(this).parent().fadeOut(function(){
 		$(this).delete;
 	});

@@ -12,7 +12,7 @@ h1{
 	background: -moz-linear-gradient(to left, #5b0082, #8106d3); 
 	background: linear-gradient(to left, #5b0082, #8106d3);   
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 32px;
 	font-weight: normal;
 	color: #f0d4fc;
 	margin: 0;
@@ -54,14 +54,31 @@ input:focus{
 	outline: none;
 }
 
+span{
+	height: 40px;
+	text-align: center;
+	width: 0px;
+	opacity: 0;
+	transition: 0.2s linear;
+	display: inline-block;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1;
+}
+
+.fa-plus-circle{
+	float: right;
+}
+
 .delete{
 	background-color: red;
-	color: black;
 }
 
 .check{
 	background-color: green;
-	color: black;
+	margin-right: 20px;
 }
 
 .completed {

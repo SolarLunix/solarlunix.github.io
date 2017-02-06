@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sound Game</title>
+	<link rel="stylesheet" href="Assets/SoundGame.css"></link>
+
+	<!--Scripts-->
+	<script type="text/javascript" src="Assets/lib/paper-full.min.js"></script>
+
+	<script type="text/paperscript" canvas="myCanvas">
+		var stars = [];
+
+		function onKeyDown(event) {
+			var maxPoint = new Point(view.size.width, view.size.height);
+			var rndPoint = Point.random();
+			var point = maxPoint * rndPoint;
+			var star = new Path.Star(point, 5, 150, 100);
+			star.fillColor = "purple"
+
+			stars.push(star);
+		}
+
+		function onFrame(event){
+			for(var i = 0; i < stars.length; i++){
+				stars[i].fillColor.hue += 1;
+				stars[i].scale(.9);
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>

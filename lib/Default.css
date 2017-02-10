@@ -1,3 +1,7 @@
+body {
+	width: 100%;
+}
+
 .sidebar {
 	border: 1px solid black;
 	padding: 5px 10px;
@@ -14,8 +18,14 @@
 	width: 300px;
 }
 
-body {
-	width: 100%;
+.jumbotron {
+    position: relative;
+    color: white;
+    background: #000 url("https://solarlunix.github.io/Images/Moon.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .game {

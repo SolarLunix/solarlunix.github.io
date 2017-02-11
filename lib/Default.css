@@ -64,6 +64,13 @@ body {
 }
 
 .active{
+	border-top: 2px solid rgb(245, 224, 252);
+	border-radius: 10px 10px 0px 0px;
+	background-color: white;
+}
+
+.nav-button{
+	border: 1px solid #B142D6;
 	background-color: white;
 }
 
@@ -91,6 +98,7 @@ body {
 }
 
 .nav { 
+	border: none;
 	background: rgb(245, 224, 252);
 }
 

@@ -3,6 +3,11 @@ body {
 	margin-bottom: 25px;
 }
 
+.tab-in{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .leafPanel{
 	border: 2px solid rgb(245, 224, 252);
 	border-radius: 20px 5px 20px 5px;
@@ -31,15 +36,13 @@ body {
 
 .leafBodyCV{
 	padding: 10px;
-	padding-bottom: 20px;
-	height: 85%;
+	height: 100%;
 }
 
 .leafPanelCV{
 	border: 2px solid rgb(245, 224, 252);
 	border-radius: 20px 5px 20px 5px;
 	width: 100%;
-	padding-bottom: 20px; 
 }
 
 .leafTitleCV{
@@ -51,6 +54,7 @@ body {
 	padding-left: 20px;
 	font-size: 24px;
 	color: #B142D6;
+	overflow: scroll;
 }
 
 .sidebar {
@@ -128,4 +132,5 @@ body {
 
 .container {
 	margin-top: 20px;
+	max-width: 100%;
 }

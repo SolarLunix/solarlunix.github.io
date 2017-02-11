@@ -63,6 +63,10 @@ body {
     background-size: 100%;
 }
 
+.active{
+	background-color: white;
+}
+
 .game {
 	width: 100%;
 	height: 200px;

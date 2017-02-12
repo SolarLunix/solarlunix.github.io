@@ -3,6 +3,12 @@ body {
 	margin-bottom: 25px;
 }
 
+td{
+  vertical-align: top;
+  text-align: left;
+  padding-right: 10px;
+}
+
 .tab-in{
 	padding-left: 15px;
 	padding-right: 15px;

@@ -121,9 +121,8 @@ body {
 	padding: 5px 10px;
 }
 
-.tab-in{
-	padding-left: 15px;
-	padding-right: 15px;
+.right{
+	text-align: right;
 }
 
 .sidebar {
@@ -134,6 +133,11 @@ body {
 .SolarLunix {
 	text-align: center;
 	width: 300px;
+}
+
+.tab-in{
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 td{

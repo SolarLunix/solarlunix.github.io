@@ -1,82 +1,46 @@
+.active{
+	border-top: 2px solid rgb(245, 224, 252);
+	border-radius: 10px 10px 0px 0px;
+	background-color: white;
+}
+
+.background{
+    background: url('https://solarlunix.github.io/Images/Moon.jpg') no-repeat;
+    background-size: 100%;
+}
+
 body {
 	width: 100%;
 	margin-bottom: 25px;
 }
 
-td{
-  vertical-align: top;
-  text-align: left;
-  padding-right: 10px;
+.container {
+	margin-top: 20px;
+	max-width: 100%;
 }
 
-.tab-in{
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.leafPanel{
-	border: 2px solid rgb(245, 224, 252);
-	border-radius: 20px 5px 20px 5px;
+.game {
 	width: 100%;
 	height: 200px;
-	padding-bottom: 20px; 
-}
-
-.leafTitle{
-	width: 100%;
-	height: 25%;
-	border-radius: 15px 0px 0px 0px;
-	background-color: rgb(245, 224, 252);
-	padding-top: 5px;
-	padding-left: 20px;
-	font-size: 24px;
-	color: #B142D6;
-}
-
-.leafBody{
-	padding: 10px;
-	padding-bottom: 20px;
-	height: 85%;
-	overflow: scroll;
-}
-
-.leafBodyCV{
-	padding: 10px;
-	height: 100%;
-}
-
-.leafPanelCV{
-	border: 2px solid rgb(245, 224, 252);
+	border: 1px solid black;
 	border-radius: 20px 5px 20px 5px;
-	width: 100%;
-}
-
-.leafTitleCV{
-	width: 100%;
-	height: 50px;
-	border-radius: 15px 0px 0px 0px;
-	background-color: rgb(245, 224, 252);
-	padding-top: 5px;
-	padding-left: 20px;
-	font-size: 24px;
-	color: #B142D6;
-	overflow: scroll;
-}
-
-.sidebar {
-	border: 1px solid black;
-	padding: 5px 10px;
-}
-
-.outline {
-	border: 1px solid black;
-	margin: 5px;
-	padding: 5px 10px;
-}
-
-.SolarLunix {
 	text-align: center;
-	width: 300px;
+	background: black;
+	color: white;
+}
+
+.gameimg {
+	max-width: 100%;
+	max-height: 90%;
+	border-radius: 20px 5px 20px 5px;
+	padding: 3px;
+}
+
+.gameTxt {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
 .jumbotron {
@@ -92,43 +56,53 @@ td{
     text-align: center
 }
 
-.background{
-    background: url('https://solarlunix.github.io/Images/Moon.jpg') no-repeat;
-    background-size: 100%;
+.leafBody{
+	padding: 10px;
+	padding-bottom: 20px;
+	height: 85%;
+	overflow: scroll;
 }
 
-.active{
-	border-top: 2px solid rgb(245, 224, 252);
-	border-radius: 10px 10px 0px 0px;
-	background-color: white;
+.leafBodyCV{
+	padding: 10px;
+	height: 100%;
 }
 
-.nav-button{
-	border: 1px solid #B142D6;
-	background-color: white;
-}
-
-.game {
+.leafPanel{
+	border: 2px solid rgb(245, 224, 252);
+	border-radius: 20px 5px 20px 5px;
 	width: 100%;
 	height: 200px;
-	border: 1px solid black;
-	border-radius: 10px;
-	text-align: center;
-	background: black;
-	color: white;
+	padding-bottom: 20px; 
 }
 
-.gameTxt {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
+.leafPanelCV{
+	border: 2px solid rgb(245, 224, 252);
+	border-radius: 20px 5px 20px 5px;
+	width: 100%;
 }
 
-.gameimg {
-	max-width: 100%;
-	max-height: 90%;
-	border-radius: 9px 9px 0px 0px;
+.leafTitle{
+	width: 100%;
+	height: 25%;
+	border-radius: 15px 0px 0px 0px;
+	background-color: rgb(245, 224, 252);
+	padding-top: 5px;
+	padding-left: 20px;
+	font-size: 24px;
+	color: #B142D6;
+}
+
+.leafTitleCV{
+	width: 100%;
+	height: 50px;
+	border-radius: 15px 0px 0px 0px;
+	background-color: rgb(245, 224, 252);
+	padding-top: 5px;
+	padding-left: 20px;
+	font-size: 24px;
+	color: #B142D6;
+	overflow: scroll;
 }
 
 .nav { 
@@ -136,7 +110,34 @@ td{
 	background: rgb(245, 224, 252);
 }
 
-.container {
-	margin-top: 20px;
-	max-width: 100%;
+.nav-button{
+	border: 1px solid #B142D6;
+	background-color: white;
+}
+
+.outline {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px 10px;
+}
+
+.tab-in{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.sidebar {
+	border: 1px solid black;
+	padding: 5px 10px;
+}
+
+.SolarLunix {
+	text-align: center;
+	width: 300px;
+}
+
+td{
+  vertical-align: top;
+  text-align: left;
+  padding-right: 10px;
 }

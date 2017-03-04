@@ -4,7 +4,7 @@
 	background-color: white;
 }
 
-.background{
+#background{
     background: url('https://solarlunix.github.io/Assets/Images/Moon.jpg') no-repeat;
     background-size: 100%;
 }

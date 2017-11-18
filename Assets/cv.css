@@ -1,0 +1,143 @@
+.all-info{
+	margin-bottom: 40px;
+}
+
+body{
+	font-family: 'Cormorant Infant', serif;
+	background: url('Images/background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.center{
+	text-align: center;
+}
+
+.centered{
+	margin: 0 auto;
+}
+
+.classinfo{
+	margin: 0px 20px;
+}
+
+.contactinfo{
+	background-color: rgba(42,74,57,.9);
+	color: white;
+}
+
+.educationinfo{
+	background-color: rgba(134,227,210,.9);
+}
+
+.fa{
+	padding: 0 5px;
+}
+
+.grades{
+	margin: 0px 20px 20px 20px;
+	padding: 20px;
+	background-color: #42A3B8;
+	border-radius: 5px;
+}
+
+.hide{
+	display: none;
+}
+
+.intro{
+	color: white;
+	text-shadow:
+    	-1px -1px 0 #000,
+    	1px -1px 0 #000,
+    	-1px 1px 0 #000,
+    	1px 1px 0 #000;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 30vh;
+    letter-spacing: 0.2em;
+}
+
+.intro h1{
+	letter-spacing: 0.3em;    
+}
+
+.intro hr{
+	border-bottom: 1px solid white;
+}
+
+p{
+	margin: 0;
+}
+
+.pageinfo{
+	font-size: .75em;
+}
+
+.personalinfo{
+	background-color: rgba(170,249,255, .9);
+	width: 100;
+}
+
+.profilepic img{
+	border-radius: 50%;
+	border: 3px solid black;
+	max-width: 100%;
+
+}
+
+.project{
+	margin: 0px 20px;
+	padding: 20px 20px;
+	background-color: #42A3B8;
+	border-radius: 5px;
+}
+
+.sectitle h2{
+	margin: 0;
+	padding: 5px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.sectitle{
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.section{
+	padding: 20px;
+}
+
+.skillsinfo{
+	background-color: rgba(47,161,118,.9);
+}
+
+.tag {
+	text-align: center;
+	padding-bottom: 20px;
+	max-width: 750px;
+	margin: 0 auto;
+	font-size: 1.25em;
+}
+
+td{
+	padding: 0 20px;
+	vertical-align: top;
+}
+
+thead{
+	font-size: 1.25em;
+}
+
+thead tr td{
+	padding: 0 5px;
+}
+
+.workinfo{
+	background-color: rgba(71,183,145,.9);
+}

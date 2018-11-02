@@ -30,28 +30,6 @@ td{
 	max-width: 100%;
 }
 
-.leafBody{
-	padding: 10px;
-}
-
-.leafPanel{
-	border: 2px solid #42A3B8;
-	border-radius: 20px 5px 20px 5px;
-	width: 100%;
-	background-color: rgba(255,255,255, .95);
-}
-
-.leafTitle{
-	width: 100%;
-	border-radius: 15px 0px 0px 0px;
-	background-color: #42A3B8;
-	padding-top: 5px;
-	padding-left: 20px;
-	padding-bottom:5px;
-	font-size: 24px;
-	color: white;
-}
-
 .section{
 	padding: 1px 30px 30px 30px;
 	margin-top: 20px;
@@ -61,4 +39,8 @@ td{
 
 .secTitle{
 	text-align: center;
+}
+
+.blogimg{
+	max-width: 100%;
 }

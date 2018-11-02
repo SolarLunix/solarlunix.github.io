@@ -41,7 +41,26 @@
 						<div class="center"><br><a class="btn btn-info" href="#open1Nov18">Read More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></div>
 					</div>
 					<div class="secBody hide" id="1Nov18">
-						<p>Honestly, I am so excited right now! I can't wait to tell you what I did and what's happening with my code!</p>
+						<p>Wow, I can't believe I did it. I made my very first Neural Network from scratch without help! It wasn't easy, and it took three days but I managed.</p>
+						<p>My is currently working on his PhD looking at machine learning of emotion through facial expression photos. I downloaded the <a href="http://www.kasrl.org/jaffe.html">Jaffe Database</a> on his recommendation after deciding to create my own Neural Network based on what he has been working on for the past two years.</p>
+						<p>Having a peak at his research, I was able to use <a href="https://opencv.org/">OpenCV</a> to quickly read in and reshape the photos. I decided to use <a href="https://scikit-image.org/">Scikit-Image</a> to run <a href="https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients">Histogram of Oriented Gradients</a> on the images since, from Ryan's research, the raw data does not classify very well. This was all set up pretty quickly but what really took up time was properly setting up the Neural Network.</p>
+						<p>This is a model of my Neural Network:</p>
+						<img class="blogimg" src="Assets/Images/NNHOG.jpg"></img><br><br>
+						<p>The hidden layer consisted of 147 hidden layers. I used 147 because it was a multiple of 7, which was the number of output layers that I used. The number of output layers was chosen so that each emotion would have an output of 0-1 with the chosen emotion being the one with the value closest to 1. These seven emotions were happy, sad, disgust, surprise, fear, anger, and neutral.</p>
+						<p> g<sup>[1]</sup>(Z<sup>[1]</sup>) was a <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)">ReLU</a> (Rectified Linear Unit) equation, this means the output will be the maximum of 0 and the input. While g<sup>[2]</sup>(Z<sup>[2]</sup>) was a <a href="https://en.wikipedia.org/wiki/Sigmoid_function">sigmoid function</a>.</p>
+						<p>This just takes care of the forward propagation (prediction) portion of my neural network. Now the Loss Function and Cost Function needed to be calculated to see how far off my neural network was from being accurate. I also included an accuracy function here to test my training data.</p>
+						<p>The loss function is L(A<sup>[2]</sup>, Y) = (Y log(A<sup>[2]</sup>)) + ((1-Y) log(1-A<sup>[2]</sup>)) with Y being the expected outputs, and A<sup>[2]</sup> having been calculated from the Neural Network. The cost function is -1/m time the sum of the loss function, where m is the number of items in the training data. This cost lets you know how well is your Neural Network is doing. I then check the accuracy to make sure that the training data is starting to show accurate training. In my program I printed these every 50 iterations.</p>
+						<p>Now the derivatives need to be calculated in order to change the weights (W) and biases (b). </p>
+						<blockquote>
+							<p>dZ<sup>[2]</sup> = A<sup>[2]</sup> - Y</p>
+							<p>dW<sup>[2]</sup> = 1/m dZ<sup>[2]</sup> A<sup>[1]</sup></p>
+							<p>db<sup>[2]</sup> = 1/m np.sum(dZ<sup>[2]</sup>, axis=1, keepdims=True)</p>
+							<p>dZ<sup>[1]</sup> = W<sup>[2]</sup> dZ<sup>[2]</sup> * g<sup>[1]</sup>`(Z<sup>[1]</sup>)</p>
+							<p>dW<sup>[1]</sup> = 1/m dZ<sup>[1]</sup> A<sup>[0]</sup></p>
+							<p>db<sup>[1]</sup> = 1/m np.sum(dZ<sup>[1]</sup>, axis=1, keepdims=True)</p>
+						</blockquote>
+						<p>Note that A<sup>[0]</sup> is another way of saying the HOG variables. Updating each variable is just the variable minus the learning rate times the derivative of that variable. I.e. W<sup>[1]</sup> = W<sup>[1]</sup> - learning rate * dW<sup>[1]</sup> The learning rate that was used for this was 1 and there were 900 iterations.</p>
+						<p>After a lot of trial and error, I was able to get a 93% accuracy on my test data. You can see my code <a href="https://github.com/SolarLunix/HOGNeuralNet">here</a>. I'm actually really proud of it so I would be happy if you took the time to look at it and give me some critiques.</p>
 						<div class="center"><br><a class="btn btn-info" href="#close1Nov18">Close <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></div>
 					</div>
 				</div>

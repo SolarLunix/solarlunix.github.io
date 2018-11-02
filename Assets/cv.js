@@ -11,13 +11,13 @@ $("a[href='#closeAwards']").on("click", function(e){
 });
 
 $("a[href='#lyitGrades']").on("click", function(e){
-    $("#lyitgradebutton").addClass("hide");
+    $("#lyitgradesbutton").addClass("hide");
     $("#lyitgrades").removeClass("hide");
     e.preventDefault();
 });
 
 $("a[href='#closeLyitGrades']").on("click", function(e){
-    $("#lyitgradebutton").removeClass("hide");
+    $("#lyitgradesbutton").removeClass("hide");
     $("#lyitgrades").addClass("hide");
     e.preventDefault();
 });
@@ -173,13 +173,13 @@ $("a[href='#closecccmproj']").on("click", function(e){
 });
 
 $("a[href='#mstarproj']").on("click", function(e){
-    $("#mstarprojbutton").addClass("hide");
+    $("#mstarbutton").addClass("hide");
     $("#mstarproj").removeClass("hide");
     e.preventDefault();
 });
 
 $("a[href='#closemstarproj']").on("click", function(e){
-    $("#mstarprojbutton").removeClass("hide");
+    $("#mstarbutton").removeClass("hide");
     $("#mstarproj").addClass("hide");
     e.preventDefault();
 });

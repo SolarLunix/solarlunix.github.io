@@ -3,82 +3,46 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
-	<link rel="stylesheet" href="Assets/lib/Bootstrap/bootstrap.min.css"></link>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="Assets/Default.css"></link>
-	<link rel="stylesheet" href="Assets/lib/Bootstrap/bootstrap-theme.min.css"></link>
 	<link rel="stylesheet" href="Assets/lib/FontAwesome/css/font-awesome.min.css"></link>
 </head>
 <body>
-	<!--Nav Bar Start-->
-	<nav class="nav navbar nav-tabs navbar-fixed-top">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed nav-button" data-toggle="collapse" data-target="#navtabs" aria-expanded="false">
-				<i class="fa fa-bars" aria-hidden="true"></i>
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-			</button>
-			<ul class="nav navbar-nav">
-				<li role="presentation" class="SolarLunix"><a href="https://solarlunix.github.io"><i class="fa fa-heartbeat" aria-hidden="true"></i> SolarLunix.github.io <i class="fa fa-heartbeat" aria-hidden="true"></i></a></li>
-			</ul>
-		</div>
-		<div class="collapse navbar-collapse" id="navtabs">	
-			<ul class="nav navbar-nav">
-				<li role="presentation" class="active"><a href="https://solarlunix.github.io">Home</a></li>
-				<li role="presentation"><a href="Projects.html">Projects</a></li>
-				<li role="presentaiton"><a href="Games.html">Games</a></li>
-			</ul>
-		</div>
-	</nav>
-
-	<div id="buffer"><br><br></div>
-	<!--Nav Bar End-->
-
 	<!--Welcome Jumbotron-->
-	<div class="jumbotron" id="background">
-  		<h1>Welcome!</h1>
-		<p>This website is wholey dedicated to the work of Melissa Melaugh.</p>
-	</div>
-
 	<div class="container">	
 		<div class="row">
+			<div class="col-sm-12 container" align="center">
+				<div class="section">
+					<div class="secTitle"><h1>Welcome!</h1><hr></div>
+					<div class="secBody">
+						Thank you for coming to my blog. I am Melissa Melaugh, and I am keeping this blog to document what I'm learning as I go through my journey in computer science.
+					</div>
+				</div>
+			</div>
+			
 			<!--Main Content Start-->
-			<div class="col-sm-12 container">
-				<div class="leafPanel">
-					<div class="leafTitle">About</div>
-					<div class="leafBody">
-						<p>Hello everyone, Melissa here, I've taken the time to create this website as a portfolio to display my skills and keep my projects all together. It is my hope that while it is a portfolio page that everyone who lands here will find something that they enjoy doing.</p>
-
-						<p>As this is a portfolio of the work that I enjoy doing, there are actually a lot of different things you'll find on this website. As I expand my page, you'll be able to find examples of just about everything I do. Some of my favourite topics are: research, coding, writing, drawing, and photography, just to name a few. Even the jumbotron is an image that I took myself during the super moon. You are welcomed to take a look at <a href="CV.html">my full cv</a>, while some information is taken out for privacy (such as my home address and phone number) you are welcomed to email me and I will reply as soon as possible.</p>
-
-						<p>Below this panel you'll find descriptions of what some of the other pages on this page are about. Of course, you're welcomed to just go and check out each page without reading about them. Personally, I recommend taking some time and heading over to the Games page.</p>
-
-						<p>This website is typically a work in progress, if you find something that isn't working, please send me an email at SolarLunix@gmail.com and I'll be sure to get it fixed quickly for you! Thanks so much for visiting my website!</p>
+			<div class="col-sm-3 container">
+				<div class="section side">
+					<div class="secTitle"><h4>Links</h4><hr></div>
+					<div class="secBody">
+						<ul>
+							<li><a href="https://solarlunix.github.io/">Home</a></li>
+							<li><a href="https://solarlunix.github.io/CV.html">Melissa's CV</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-sm-6 container">
-				<div class="leafPanel">
-					<div class="leafTitle">Projects</div>
-					<div class="leafBody">
-						<p>The <a href="Projects.html">Projects Page</a> features most of the projects that I'm currently working on or finished with, including links to features of those projects, such as code.</p>
-
-						<p>A lot of the projects featured on the projects page will be code based, but occasionally there will be photos of some of the other things I'm working on, such as many of my blankets and what not that I like to crochet. When those projects are finished I plan on photographing them and moving them to a gallery page, which will be created once there are items to go up there.</p>
-
-						<p>So if you have the time and want to see what I'm up to, it's probably a good idea to head over to the <a href="Projects.html">Projects Page</a> to see what's going on.</p>
+			<div class="col-sm-9 container">
+				<div class="section">
+					<div class="secTitle"><h3>1 November 2018</h3><hr></div>
+					<div class="secPreview" id="1Nov18preview">
+						<p>This is my very first blog post. I go over a little of what I've already learned and the creation of my first Neural Network from scratch.</p>
+						<div class="center"><br><a class="btn btn-info" href="#open1Nov18">Read More <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></div>
 					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-6 container">
-				<div class="leafPanel">
-					<div class="leafTitle">Games</div>
-					<div class="leafBody">
-						<p>The <a href="Games.html">Games Page</a> has to be one of my favourite parts of this website. It is where I have a gallery of all of the games that I have made. So far, there are games up there which are built by Unity and by CSS, HTML, and JavaScript. Each game that I have put up I am incredibly proud of and I hope you all take the time to play them and give me your feedback.</p>
-
-						<p>Feedback can be given by emailing me at SolarLunix@gmail.com. Hopefully it won't be long before I'm able to create a dedicated feedback form! The speed at which the form will be up depends on when I learn about it in my Web Development Course.</p>
-
-						<p>So, if you want to relax, why don't you head over to the <a href="Games.html">Games Page</a> and blow off a little steam!</p>
+					<div class="secBody hide" id="1Nov18">
+						<p>Honestly, I am so excited right now! I can't wait to tell you what I did and what's happening with my code!</p>
+						<div class="center"><br><a class="btn btn-info" href="#close1Nov18">Close <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></div>
 					</div>
 				</div>
 			</div>
@@ -89,16 +53,6 @@
 	<!--Scripts-->
 	<script type="text/javascript" src="Assets/lib/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="Assets/lib/Bootstrap/bootstrap.min.js"></script>
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-91810518-1', 'auto');
-		ga('send', 'pageview');
-
-	</script>
+	<script type="text/javascript" src="Assets/index.js"></script>
 </body>
 </html>

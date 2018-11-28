@@ -10,6 +10,18 @@ $("a[href='#closeAwards']").on("click", function(e){
     e.preventDefault();
 });
 
+$("a[href='#courseGrades']").on("click", function(e){
+    $("#coursegradesbutton").addClass("hide");
+    $("#coursegrades").removeClass("hide");
+    e.preventDefault();
+});
+
+$("a[href='#closecourseGrades']").on("click", function(e){
+    $("#coursegradesbutton").removeClass("hide");
+    $("#coursegrades").addClass("hide");
+    e.preventDefault();
+});
+
 $("a[href='#lyitGrades']").on("click", function(e){
     $("#lyitgradesbutton").addClass("hide");
     $("#lyitgrades").removeClass("hide");

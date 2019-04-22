@@ -1,40 +1,98 @@
-.hide{
-	display: none;
+body {
+  font-family: 'Cormorant Infant', serif;
+  background: white;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: dimgrey;
+}
+
+td{
+  padding: 0 20px 0 0;
+  vertical-align: top;
+}
+
+.about{
+  margin: 10px;
+}
+
+.active{
+	background-color: white;
+}
+
+.btn{
+	background-color: #111;
+	border-color: #111;
+}
+
+.btn:hover{
+	background-color: slategray;
+	border-color: slategray;
+}
+
+.center{
+  text-align: center;
+}
+
+.container{
+  max-width: 100%;
 }
 
 .intro{
-	text-shadow:
-    	-1px -1px 0 #000,
-    	1px -1px 0 #000,
-    	-1px 1px 0 #000,
-    	1px 1px 0 #000;
-    max-width: 500px;
-    text-align: center;
-    margin: 0 auto;
-    height: 100vh;
-    padding-top: 30vh;
-    letter-spacing: 0.2em;
-	color: white;
+  margin-top: 50px;
+  max-width: 100%;
+  letter-spacing: 0.2em;
+  color: grey;
 }
 
-.intro h1{
-	letter-spacing: 0.3em;    
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
 }
 
-.intro hr{
-	border-bottom: 1px solid white;
+.name{
+  text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  color: white;
 }
 
-.profilepic img{
-	border-radius: 50%;
-	border: 3px solid black;
-	max-width: 100%;
+.pic img{
+  margin: 10px;
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 50%;
+  border: 3px solid black;
 }
 
-.tag{
-	text-align: center;
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.note {
-	font-size: 0.75em;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 }
+
+.sidenav a:hover {
+  color: lightcyan;
+}
+
+/* If statements */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px; width: 100px;}
+  .sidenav a {font-size: 18px;}
+  .main {margin-left: 100px;}
+} 

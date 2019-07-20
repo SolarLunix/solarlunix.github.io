@@ -8,6 +8,10 @@ body {
 	color: dimgrey;
 }
 
+h3{
+	padding-top: 7px;
+}
+
 img{
 	max-width: 100%;
 	max-height: 100%;

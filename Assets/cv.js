@@ -195,4 +195,3 @@ $("a[href='#closemstarproj']").on("click", function(e){
     $("#mstarproj").addClass("hide");
     e.preventDefault();
 });
-

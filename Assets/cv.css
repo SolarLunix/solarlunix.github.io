@@ -15,38 +15,11 @@ td{
   margin: 10px;
 }
 
-.active{
-	background-color: white;
-}
-
-.btn{
-	background-color: #111;
-	border-color: #111;
-}
-
-.btn:hover{
-	background-color: slategray;
-	border-color: slategray;
-}
-
-.center{
-  text-align: center;
-}
-
-.container{
-  max-width: 100%;
-}
-
 .intro{
   margin-top: 50px;
   max-width: 100%;
   letter-spacing: 0.2em;
   color: grey;
-}
-
-.main {
-  margin-left: 160px;
-  padding: 0px 10px;
 }
 
 .name{
@@ -65,34 +38,3 @@ td{
   border-radius: 50%;
   border: 3px solid black;
 }
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: lightcyan;
-}
-
-/* If statements */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px; width: 100px;}
-  .sidenav a {font-size: 18px;}
-  .main {margin-left: 100px;}
-} 

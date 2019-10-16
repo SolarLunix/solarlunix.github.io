@@ -8,6 +8,10 @@ body {
 	color: dimgrey;
 }
 
+hr{
+	border-color: #53429C;
+}
+
 h3{
 	padding-top: 7px;
 }
@@ -25,14 +29,20 @@ td{
 
 /* Class items */
 .btn{
-	background-color: #111;
-	border-color: #111;
+	background-color: #53429C;
+	border-color: #53429C;
 }
 
 .btn:hover{
-	background-color: slategray;
-	border-color: slategray;
+	background-color: #2F556B;
+	border-color: #53429C;
 }
+
+.btn:active{
+	background-color: #E0E0E0;
+	border-color: #53429C;
+}
+
 .center{
 	text-align: center;
 }
@@ -48,8 +58,8 @@ td{
 .item{
 	height: 90%;
 	margin-top: 20px;
-	border: 1px solid lightgray;
-	background-color: lightgray;
+	border: 1px solid #E0E0E0;
+	background-color: #E0E0E0;
 }
 
 .main {
@@ -58,7 +68,7 @@ td{
 }
 
 .project{
-	background-color: rgba(153, 215, 147, .38);
+	background-color: #E0E0E0;
 	padding: 20px;
 	margin-top: 30px;
 	height: 100%;
@@ -72,21 +82,22 @@ td{
 
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 170px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #2F556B;
   overflow-x: hidden;
   padding-top: 20px;
+  border-right: 10px solid #53429C;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #E0E0E0;
   display: block;
 }
 

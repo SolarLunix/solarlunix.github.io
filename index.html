@@ -5,133 +5,56 @@
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="Assets/Default.css"></link>
 	<link rel="stylesheet" href="Assets/lib/FontAwesome/css/font-awesome.min.css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet"></link>
+	<link rel="stylesheet" href="Assets/index.css"></link>
+	<link rel="stylesheet" href="Assets/Default.css"></link>
 
 	<title>Home</title>
 </head>
 
 <body>
-	<!-- Side navigation -->
-	<div class="sidenav">
-		<a href="#home">Home</a>
-	  	<a href="#Python">Python</a>
-	  	<a href="#Unity">Unity</a>
-	  	<a href="#Other">Other</a>
-	</div>
-
-	<div class="main">
+	<div class="content">
 		<div class="container">
-			<h1 class="center centered" id="home">Melissa's Projects</h1>
-			<div class="center centered">If you like my projects, check out my <a href="CV.html">CV</a>.</div>
-			
-			<div id="Python">
-				<hr>
-				<h2 class="center centered">Python</h2>
-				<div class="container">
-					<div class="row">
-
-						<div class="col-md-6">
-							<div class="container item">
-								<h3>Facial Emotion Recognition</h3>
-								<div class="container">
-									<p>Using Numpy, a neural network is built from the ground up to classify JAFFE images after they have been preprocessed by skimage's HOG. The images are split into training and testing sets using sklearn, and the model is able to achieve over a 90% accuracy.</p>
-									<p><a href="https://github.com/SolarLunix/HOGNeuralNet" target=".blank">Check out the Project</a></p>
-								</div>
-							</div>
+			<div class="row">
+				<div class="col-md-12 center w top">
+					<h1><u>Melissa Melaugh</u></h1>
+					<div id="tag">Programmer | Machine Learning Engineer | Biologist</div>
+				</div>
+				<div class="col-md-6 h w">
+					<div class="slide centered w">
+						<div class="sphere">
+							<a href="Projects.html">
+								<img src="Assets/Images/Projects1.png">
+							</a>
 						</div>
-
+					</div>
+				</div>
+				<div class="col-md-6 h w">
+					<div class="slide centered w">
+						<div class="sphere">
+							<a href="CV.html">
+								<img src="Assets/Images/Profile.png">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 centered h w">
+					<div class="slide centered w">
+						<div class="sphere">
+							<a href="https://github.com/SolarLunix/solarlunix.github.io">
+								<img src="Assets/Images/code.png">
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			
-			<div id="Unity">
-				<hr>
-				<h2 class="center centered">Unity</h2>
-				<div class="container">
-					<div class="row">
-
-						<div class="col-md-6">
-							<div class="container item">
-								<h3>Number Wizzard</h3>
-								<div class="container">
-									<p>In this Unity Game, the player thinks of a number and the computer will try to guess your number in a set number of turns. If it is unable to guess before its guesses rung out, you win!</p>
-									<p><a href="Games/NumberWizzard/index.html" target=".blank">Play Now!</a></p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="container item">
-								<h3>Block Breaker</h3>
-								<div class="container">
-									<p>This fun little game was created in Unity. The player tries to break the bricks by bouncing a ball off of a platform.</p>
-									<p><a href="Games/BlockBreaker/index.html" target=".blank">Play Now!</a></p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="container item">
-								<h3>Text Adventure</h3>
-								<div class="container">
-									<p>Try your hand at getting a good ending with this quick text adventure game.</p>
-									<p><a href="Games/TextAdventure/index.html" target=".blank">Play Now!</a></p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="Other">
-				<hr>
-				<h2 class="center centered">Other</h2>
-				<div class="container">
-					<div class="row">
-
-						<div class="col-md-6">
-							<div class="container item">
-								<h3>The Colour Game</h3>
-								<div class="container">
-									<p>Using HTML, CSS, and JS, this game was created to have the user try to guess the correct colour based on the RBG values.</p>
-									<p><a href="Games/ColourGame/index.html" target=".blank">Play Now!</a></p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="container item">
-								<h3>Art Fun</h3>
-								<div class="container">
-									<p>This game was made using a paperscript canvas, and features colour changing dots that the user can draw with. The current colour cannot be changed, as this was a small sample project as part of a website design course.</p>
-									<p><a href="Games/ArtFun/index.html" target=".blank">Play Now!</a></p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="container item">
-								<h3>Sound Game</h3>
-								<div class="container">
-									<p>This quirky little game allows you to make music by typing on your keyboard.</p>
-									<p><a href="Games/SoundGame/index.html" target=".blank">Play Now!</a></p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
 		</div>
 	</div>
-	
 
 	<!--Scripts-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

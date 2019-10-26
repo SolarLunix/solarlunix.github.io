@@ -1,11 +1,8 @@
 /* Default items */
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	/*background: url(Images/background1.jpg);*/
-	background-repeat: no-repeat;
+	font-family: Corbel;
 	margin-bottom: 40px;
 	font-size: 16px;
-	color: dimgrey;
 }
 
 hr{
@@ -17,8 +14,8 @@ h3{
 }
 
 img{
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 td{
@@ -52,7 +49,7 @@ td{
 }
 
 .container{
-  max-width: 100%;
+  	max-width: 100%;
 }
 
 .item{
@@ -63,8 +60,8 @@ td{
 }
 
 .main {
-  margin-left: 160px;
-  padding: 0px 10px;
+  	margin-left: 160px;
+  	padding: 0px 10px;
 }
 
 .project{
@@ -81,33 +78,43 @@ td{
 }
 
 .sidenav {
-  height: 100%;
-  width: 170px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #2F556B;
-  overflow-x: hidden;
-  padding-top: 20px;
-  border-right: 10px solid #53429C;
+	height: 100%;
+  	width: 180px;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: #2F556B;
+  	overflow-x: hidden;
+  	padding-top: 20px;
+  	border-right: 10px solid #53429C;
+  	color: #E0E0E0;
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #E0E0E0;
-  display: block;
+  	padding: 6px 8px 6px 16px;
+  	text-decoration: none;
+  	font-size: 25px;
+  	color: #E0E0E0;
+  	display: block;
 }
 
 .sidenav a:hover {
-  color: lightcyan;
+  	color: lightcyan;
 }
+
+.sphere {
+	text-align: center;
+  	margin: 0 auto;
+  	width: 300px;
+  	height: 300px;
+  	border-radius: 50%;
+}
+
 
 /* If statements */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px; width: 100px;}
-  .sidenav a {font-size: 18px;}
-  .main {margin-left: 100px;}
+  	.sidenav {padding-top: 15px; width: 100px;}
+  	.sidenav a {font-size: 18px;}
+  	.main {margin-left: 100px;}
 } 
